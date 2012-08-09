@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite1" duration-ms="20628" started-at="2012-08-09T09:43:09Z" finished-at="2012-08-09T09:43:30Z">
+    <groups>
+      <group name="demo">
+        <method signature="PLF_demo.defaultTestCase()[pri:0, instance:org.exoplatform.selenium.platform.demo.PLF_demo@119dc16]" name="defaultTestCase" class="org.exoplatform.selenium.platform.demo.PLF_demo"/>
+        <method signature="PLF_demo.testCase()[pri:0, instance:org.exoplatform.selenium.platform.demo.PLF_demo@119dc16]" name="testCase" class="org.exoplatform.selenium.platform.demo.PLF_demo"/>
+      </group>
+      <group name="platform">
+        <method signature="PLF_demo.defaultTestCase()[pri:0, instance:org.exoplatform.selenium.platform.demo.PLF_demo@119dc16]" name="defaultTestCase" class="org.exoplatform.selenium.platform.demo.PLF_demo"/>
+        <method signature="PLF_demo.testCase()[pri:0, instance:org.exoplatform.selenium.platform.demo.PLF_demo@119dc16]" name="testCase" class="org.exoplatform.selenium.platform.demo.PLF_demo"/>
+      </group>
+    </groups>
+    <test name="Platform" duration-ms="20628" started-at="2012-08-09T09:43:09Z" finished-at="2012-08-09T09:43:30Z">
+      <class name="org.exoplatform.selenium.platform.demo.PLF_demo">
+        <test-method status="PASS" signature="defaultTestCase()[pri:0, instance:org.exoplatform.selenium.platform.demo.PLF_demo@119dc16]" name="defaultTestCase" duration-ms="12" started-at="2012-08-09T09:43:09Z" finished-at="2012-08-09T09:43:09Z">
+        </test-method>
+        <test-method status="PASS" signature="testCase()[pri:0, instance:org.exoplatform.selenium.platform.demo.PLF_demo@119dc16]" name="testCase" duration-ms="20602" started-at="2012-08-09T09:43:09Z" finished-at="2012-08-09T09:43:30Z">
+        </test-method>
+      </class>
+    </test>
+  </suite>
+</testng-results>

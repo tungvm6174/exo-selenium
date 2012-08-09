@@ -1,0 +1,50 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite1" verbose="1">
+	<test name="SniffTest" enabled="false">
+		<packages>
+      <package name="org.exoplatform.selenium.platform.social.sniff" />
+      <package name="org.exoplatform.selenium.platform.ecms.sniff" />
+    </packages>
+	</test>
+
+  <test name="SmokeTest" enabled="false">
+    <packages>
+      <package name="org.exoplatform.selenium.platform.social.smoke" />
+      <package name="org.exoplatform.selenium.platform.ecms.smoke" />
+    </packages>
+  </test>
+
+  <test name="FncHigh" enabled="false">
+    <packages>
+      <package name="org.exoplatform.selenium.platform.social.fnchigh" />
+      <package name="org.exoplatform.selenium.platform.ecms.fnchigh" />
+    </packages>
+  </test>
+
+  <test name="Social" enabled="false">
+    <packages>
+      <package name="org.exoplatform.selenium.platform.social.people" />
+      <package name="org.exoplatform.selenium.platform.social.space" />
+      <package name="org.exoplatform.selenium.platform.social.userstories" />
+    </packages>
+  </test>
+
+  <test name="Platform" enabled="true">
+	  <groups>
+	    <run>
+	      <!-- <include name="social" />
+	      <exclude name="fnchigh" />
+	      <exclude name="smoke" />
+	      <exclude name="sniff" /> -->
+	      
+	      <include name="platform" />
+	    </run>
+	  </groups>
+
+    <packages>
+      <package name="org.exoplatform.selenium.platform.*" />
+    </packages>  
+  </test>
+
+</suite>
