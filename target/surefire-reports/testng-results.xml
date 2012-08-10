@@ -2,22 +2,26 @@
 <testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite1" duration-ms="20628" started-at="2012-08-09T09:43:09Z" finished-at="2012-08-09T09:43:30Z">
+  <suite name="DemoSuite" duration-ms="21024" started-at="2012-08-10T11:42:12Z" finished-at="2012-08-10T11:42:33Z">
     <groups>
       <group name="demo">
-        <method signature="PLF_demo.defaultTestCase()[pri:0, instance:org.exoplatform.selenium.platform.demo.PLF_demo@119dc16]" name="defaultTestCase" class="org.exoplatform.selenium.platform.demo.PLF_demo"/>
-        <method signature="PLF_demo.testCase()[pri:0, instance:org.exoplatform.selenium.platform.demo.PLF_demo@119dc16]" name="testCase" class="org.exoplatform.selenium.platform.demo.PLF_demo"/>
+        <method signature="PLF_demo.searchOther()[pri:0, instance:org.exoplatform.selenium.platform.demo.PLF_demo@e6f7d2]" name="searchOther" class="org.exoplatform.selenium.platform.demo.PLF_demo"/>
+        <method signature="PLF_demo.searchSelenium()[pri:0, instance:org.exoplatform.selenium.platform.demo.PLF_demo@e6f7d2]" name="searchSelenium" class="org.exoplatform.selenium.platform.demo.PLF_demo"/>
       </group>
       <group name="platform">
-        <method signature="PLF_demo.defaultTestCase()[pri:0, instance:org.exoplatform.selenium.platform.demo.PLF_demo@119dc16]" name="defaultTestCase" class="org.exoplatform.selenium.platform.demo.PLF_demo"/>
-        <method signature="PLF_demo.testCase()[pri:0, instance:org.exoplatform.selenium.platform.demo.PLF_demo@119dc16]" name="testCase" class="org.exoplatform.selenium.platform.demo.PLF_demo"/>
+        <method signature="PLF_demo.searchOther()[pri:0, instance:org.exoplatform.selenium.platform.demo.PLF_demo@e6f7d2]" name="searchOther" class="org.exoplatform.selenium.platform.demo.PLF_demo"/>
+        <method signature="PLF_demo.searchSelenium()[pri:0, instance:org.exoplatform.selenium.platform.demo.PLF_demo@e6f7d2]" name="searchSelenium" class="org.exoplatform.selenium.platform.demo.PLF_demo"/>
       </group>
     </groups>
-    <test name="Platform" duration-ms="20628" started-at="2012-08-09T09:43:09Z" finished-at="2012-08-09T09:43:30Z">
+    <test name="PlatformDemo" duration-ms="21024" started-at="2012-08-10T11:42:12Z" finished-at="2012-08-10T11:42:33Z">
       <class name="org.exoplatform.selenium.platform.demo.PLF_demo">
-        <test-method status="PASS" signature="defaultTestCase()[pri:0, instance:org.exoplatform.selenium.platform.demo.PLF_demo@119dc16]" name="defaultTestCase" duration-ms="12" started-at="2012-08-09T09:43:09Z" finished-at="2012-08-09T09:43:09Z">
+        <test-method status="PASS" signature="beforeGroups()[pri:0, instance:org.exoplatform.selenium.platform.demo.PLF_demo@e6f7d2]" name="beforeGroups" is-config="true" duration-ms="1712" started-at="2012-08-10T11:42:12Z" finished-at="2012-08-10T11:42:14Z">
         </test-method>
-        <test-method status="PASS" signature="testCase()[pri:0, instance:org.exoplatform.selenium.platform.demo.PLF_demo@119dc16]" name="testCase" duration-ms="20602" started-at="2012-08-09T09:43:09Z" finished-at="2012-08-09T09:43:30Z">
+        <test-method status="PASS" signature="searchOther()[pri:0, instance:org.exoplatform.selenium.platform.demo.PLF_demo@e6f7d2]" name="searchOther" duration-ms="4576" started-at="2012-08-10T11:42:14Z" finished-at="2012-08-10T11:42:19Z">
+        </test-method>
+        <test-method status="PASS" signature="searchSelenium()[pri:0, instance:org.exoplatform.selenium.platform.demo.PLF_demo@e6f7d2]" name="searchSelenium" duration-ms="13518" started-at="2012-08-10T11:42:19Z" finished-at="2012-08-10T11:42:32Z">
+        </test-method>
+        <test-method status="PASS" signature="afterGroups()[pri:0, instance:org.exoplatform.selenium.platform.demo.PLF_demo@e6f7d2]" name="afterGroups" is-config="true" duration-ms="1203" started-at="2012-08-10T11:42:32Z" finished-at="2012-08-10T11:42:33Z">
         </test-method>
       </class>
     </test>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="0" time="20.61" errors="0" skipped="0" tests="2" name="TestSuite">
+<testsuite failures="0" time="18.09" errors="0" skipped="0" tests="2" name="TestSuite">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/media/eXo/my-java/java/jdk1.6/jre/lib/i386"/>
@@ -56,6 +56,6 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase time="0.01" classname="org.exoplatform.selenium.platform.demo.PLF_demo" name="defaultTestCase"/>
-  <testcase time="20.6" classname="org.exoplatform.selenium.platform.demo.PLF_demo" name="testCase"/>
+  <testcase time="4.574" classname="org.exoplatform.selenium.platform.demo.PLF_demo" name="searchOther"/>
+  <testcase time="13.516" classname="org.exoplatform.selenium.platform.demo.PLF_demo" name="searchSelenium"/>
 </testsuite>
