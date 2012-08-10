@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="DemoSuite" verbose="1">
+  <test name="GateinDemo" enabled="true">
+    <parameter name="baseUrl" value="http://localhost:8080/portal"/>
+    <packages>
+      <package name="org.exoplatform.selenium.gatein.demo" />
+    </packages>  
+  </test>
+
+  <test name="PlatformDemo" enabled="true">
+    <parameter name="baseUrl" value="http://google.com"/>
+    <packages>
+      <package name="org.exoplatform.selenium.platform.demo" />
+    </packages>  
+  </test>
+</suite>

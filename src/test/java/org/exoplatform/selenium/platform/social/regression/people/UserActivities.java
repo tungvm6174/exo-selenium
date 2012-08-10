@@ -5,13 +5,13 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class UserActivities extends SocialTestSuite{
-  @Test(groups = {"social"})
+  @Test(groups = {"social", "regression", "people"})
   public void createActivity() {
     log("createActivity");
     Assert.assertTrue(true);
   }
 
-  @Test(groups = {"social"})
+  @Test(groups = {"social", "regression", "people"})
   public void deleteActivity() {
     log("deleteActivity");
     Assert.assertTrue(true);

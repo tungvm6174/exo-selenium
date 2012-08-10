@@ -35,8 +35,45 @@
 			<artifactId>selenium-java</artifactId>
 			<version>2.24.1</version>
 		</dependency>
-
 	</dependencies>
+
+	<profiles>
+		<profile>
+			<id>demo</id>
+			<properties>
+				<testSuite>demo.xml</testSuite>
+			</properties>
+		</profile>
+
+		<profile>
+			<id>sniff</id>
+			<properties>
+				<testSuite>sniff.xml</testSuite>
+			</properties>
+		</profile>
+
+		<profile>
+			<id>smoke</id>
+			<properties>
+				<testSuite>smoke.xml</testSuite>
+			</properties>
+		</profile>
+
+		<profile>
+			<id>func</id>
+			<properties>
+				<testSuite>func.xml</testSuite>
+			</properties>
+		</profile>
+
+		<profile>
+			<id>regression</id>
+			<properties>
+				<testSuite>regression.xml</testSuite>
+			</properties>
+		</profile>
+		
+	</profiles>
 
 	<build>
 		<plugins>
@@ -48,13 +85,12 @@
 					<systemProperties>
 						<property>
 							<name>webdriver.chrome.driver</name>
-							<value>chromedriver</value>
+							<value>${project.build.testOutputDirectory}/chromedriver</value>
 						</property>
 					</systemProperties>
 					<suiteXmlFiles>
-						<suiteXmlFile>testng.xml</suiteXmlFile>
+						<suiteXmlFile>${project.build.testOutputDirectory}/suites/${testSuite}</suiteXmlFile>
 					</suiteXmlFiles>
-					<!-- <groups>social,sniff</groups> -->
 				</configuration>
 			</plugin>
 		</plugins>
