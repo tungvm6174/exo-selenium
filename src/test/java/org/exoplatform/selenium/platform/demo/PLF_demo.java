@@ -2,7 +2,6 @@ package org.exoplatform.selenium.platform.demo;
 
 import java.util.concurrent.TimeUnit;
 
-import org.exoplatform.selenium.BaseTestSuite;
 import org.exoplatform.selenium.platform.PlatformTestSuite;
 import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -16,17 +15,18 @@ public class PLF_demo extends PlatformTestSuite{
   
   @BeforeGroups(groups = {"platform"})
   public void beforeGroups() throws Exception {
-    log("TUNGVM: beforeGroups");
-    //driver = new FirefoxDriver();
-    //System.setProperty("webdriver.chrome.driver", "chromedriver");
-    driver = new ChromeDriver();
-    baseUrl = "http://google.com";
+    String browser = System.getProperty("browser");
+    if(browser.equals("chrome")){
+      driver = new ChromeDriver();
+    } else {
+      driver = new FirefoxDriver();
+    }
+    baseUrl = System.getProperty("baseUrl");
     driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
   }
 
   @AfterGroups(groups = {"platform"})
   public void afterGroups() throws Exception {
-    log("TUNGVM: afterGroups");
     driver.quit();
     String verificationErrorString = verificationErrors.toString();
     if (!"".equals(verificationErrorString)) {

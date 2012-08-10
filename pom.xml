@@ -85,7 +85,8 @@
 					<systemProperties>
 						<property>
 							<name>webdriver.chrome.driver</name>
-							<value>${project.build.testOutputDirectory}/chromedriver</value>
+							<!-- <value>${project.build.testOutputDirectory}/chromedriver</value> -->
+							<value>chromedriver</value>
 						</property>
 					</systemProperties>
 					<suiteXmlFiles>
